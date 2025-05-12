@@ -4,6 +4,28 @@
  　→ ずんだもんに色々聞いて回答してもらえるものを作りたい！
 
 ## 概要図  
-![Overview Image](https://github.com/sweetholic-engineer/gpt-zundamon-collab/tree/main/images/zundamon-gpt-collab.png)  
-  
-test
+![Overview Image](images/zundamon-gpt-collab.png)
+
+## 構築環境
+- OS : Mac (Sequoia 15.4.1)
+- CPU : Apple M1
+- VOICEVOX : 0.23.0
+
+## 環境準備
+### voicevox engineのインストール
+1. build済みのアーカイブを[こちら](https://github.com/VOICEVOX/voicevox_engine/releases)からダウンロード
+2. アーカイブを解凍
+```bash
+$ 7z x voicevox_engine-macos-x64-0.23.0.7z.001
+
+もし7zipがなければ先に以下のコマンドを実行
+$ brew install p7zip
+```
+3. 起動確認
+```bash
+$ cd macos-x64
+$ chmod 755 run
+$ ./run
+
+http://localhost:50021/docs でドキュメントが確認できればとりあえずOK
+```
